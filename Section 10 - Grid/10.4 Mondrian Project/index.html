@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .grid-container{
+      display : grid;
+      grid-template-rows : 414px 130px 155px 20px ;
+      grid-template-columns: 320px 198px 153px 50px ;
+      gap:9px;
+      background-color: black;
+      width : 748px;
+
+    }
+
+    .red{
+      background-color: red;
+
+    }
+
+    .beige{
+      background-color: beige;
+    }
+
+    .yellow{
+      background-color: rgb(255, 204, 0);
+    }
+
+    .blue{
+      background-color: rgb(0, 0, 126);
+    }
+
+    .black{
+      background-color: black;
+    }
+
+    .b1{
+      grid-column : span 3;
+    }
+
+    .b2{
+      grid-row : span 2;
+    }
+
+    .b3{
+      grid-column : span 2;
+      grid-row : span 2 ;
+    }
+
+    .b4{
+      grid-row : span 2;
+    }
+ 
+    body {
+      display : flex;
+      height : 100vh;
+      justify-content: center;
+      align-items: center;
+      margin : 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="grid-container">
+      <div class="red"></div>
+      <div class="beige b1"></div>
+      <div class="beige b2"></div>
+      <div class="beige b3"></div>
+      <div class="blue"></div>
+      <div class="beige b4"></div>
+      <div class="beige b5"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+   </div>
+</body>
+
+</html>
